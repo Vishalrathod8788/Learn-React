@@ -1,4 +1,4 @@
-import ShortCircuite from "./components/hooks/ShortCircuite";
+import { ShortCircuite } from "./components/hooks/ShortCircuite";
 
 export const App = () => {
   return (

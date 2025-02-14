@@ -2,20 +2,19 @@ import { useState } from "react";
 import "./hooks.css";
 
 export const ShortCircuite = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [user, setUser] = useState("");
+  const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
 
-  const handleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
+  const handleLoginState = () => {
+    setisLoggedIn(!isLoggedIn);
   };
 
-  const handleSetUser = () => {
-    setUser("John Doe");
+  const handleUserState = () => {
+    setUser("Vishal Rathod");
   };
 
-  const handleClearUser = () => {
-    setUser("");
-    setIsLoggedIn(false);
+  const handleClearUserState = () => {
+    setUser(null);
   };
 
   return (
@@ -23,15 +22,15 @@ export const ShortCircuite = () => {
       <h2>Short Circuit Example</h2>
 
       <div className="button-group">
-        <button onClick={handleLogin}>Toggle Login</button>
-        <button onClick={handleSetUser}>Set User</button>
-        <button onClick={handleClearUser}>Clear User</button>
+        <button onClick={handleLoginState}>Toggle Login</button>
+        <button onClick={handleUserState}>Set User</button>
+        <button onClick={handleClearUserState}>Clear User</button>
       </div>
 
       <div className="message">
         {isLoggedIn && <p>User is logged in!</p>}
         {!isLoggedIn && <p>User is logged out!</p>}
-        {user && <p>Welcome, {user}!</p>}
+        {user ? `Welcome, ${user}!` : <p>Welcome, Guest!</p>}
       </div>
     </div>
   );
