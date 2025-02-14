@@ -1,10 +1,10 @@
-import { Todo } from "./Project/Todo/Todo";
+import ShortCircuite from "./components/hooks/ShortCircuite";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <Todo />
+        <ShortCircuite />
       </section>
     </>
   );
