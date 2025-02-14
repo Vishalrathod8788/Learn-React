@@ -1,0 +1,57 @@
+[
+
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "occupation": "Software Developer",
+      "location": "New York",
+      "hobbies": ["coding", "hiking", "photography"],
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Smith",
+      "age": 28,
+      "occupation": "UX Designer",
+      "location": "San Francisco",
+      "hobbies": ["painting", "yoga", "traveling"],
+      "email": "sarah@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "age": 35,
+      "occupation": "Product Manager",
+      "location": "Chicago",
+      "hobbies": ["reading", "gaming", "cooking"],
+      "email": "mike@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Emily Chen",
+      "age": 15,
+      "occupation": "Data Scientist",
+      "location": "Boston",
+      "hobbies": ["dancing", "machine learning", "swimming"],
+      "email": "emily@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Alex Rodriguez",
+      "age": 32,
+      "occupation": "Marketing Manager",
+      "location": "Miami",
+      "hobbies": ["soccer", "blogging", "music"],
+      "email": "alex@example.com"
+    },
+    {
+      "id": 6,
+      "name": "Vishal Rathod",
+      "age": 20,
+      "occupation": "Software Developer",
+      "location": "Bangluru",
+      "hobbies": ["soccer", "blogging", "music"],
+      "email": "coder@vishal.sbs"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "rollNumber": "24MCA10",
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 2,
+      "rollNumber": "24MCA20",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": "No"
+    },
+    {
+      "id": 3,
+      "rollNumber": "24MCA30",
+      "firstName": "Vishal",
+      "lastName": "Rathod",
+      "age": 20,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 4,
+      "rollNumber": "24MCA40",
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 5,
+      "rollNumber": "24MCA50",
+      "firstName": "David",
+      "lastName": "Wilson",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": "No"
+    },
+    {
+      "id": 6,
+      "rollNumber": "24MCA60",
+      "firstName": "Olivia",
+      "lastName": "Taylor",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 7,
+      "rollNumber": "24MCA70",
+      "firstName": "Daniel",
+      "lastName": "Anderson",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 8,
+      "rollNumber": "24MCA80",
+      "firstName": "Sophia",
+      "lastName": "Thomas",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": "No"
+    },
+    {
+      "id": 9,
+      "rollNumber": "24MCA90",
+      "firstName": "Matthew",
+      "lastName": "Moore",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": "Yes"
+    },
+    {
+      "id": 10,
+      "rollNumber": "24MCA100",
+      "firstName": "Ava",
+      "lastName": "Jackson",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": "Yes"
+    }
+]
