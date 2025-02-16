@@ -85,7 +85,3 @@ export const RegistrationForm = () => {
     </div>
   );
 };
-.registration-form {
-    max-width: 400px;
-    margin: 0 auto;
-    
