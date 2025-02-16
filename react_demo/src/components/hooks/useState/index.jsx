@@ -21,7 +21,8 @@ export const Counter = () => {
       <h2>Counter Example</h2>
 
       <div className="message">Counter: {count}</div>
-      <input className= "input"
+      <input
+        className="input"
         type="number"
         placeholder="Type somethings..."
         name="step"
