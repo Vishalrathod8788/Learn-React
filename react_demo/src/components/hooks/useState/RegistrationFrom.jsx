@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./RegistrationForm.css";
 
-// /home/vishal/Learn-React/react_demo/src/components/hooks/useState/RegistrationForm.jsx
-
 export const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -23,7 +21,6 @@ export const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
-    // Add your form submission logic here
   };
 
   return (
