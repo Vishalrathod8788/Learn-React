@@ -1,10 +1,10 @@
-import { ShortCircuite } from "./components/hooks/ShortCircuite";
+import { Counter } from "./components/hooks/useState";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <ShortCircuite />
+        <Counter />
       </section>
     </>
   );
