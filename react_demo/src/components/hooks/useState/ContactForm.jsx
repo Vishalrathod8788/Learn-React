@@ -3,14 +3,19 @@ export const ContactForm = () => {
     <>
       <div>
         <h1 className="contact-title">Contact Form</h1>
-        <form className="contact-form" onSubmit={(e) => {
-          e.preventDefault();
-          console.log(`Username: ${username}, Password: ${password}, Message: ${message}`);
-        }}>
+        <form
+          className="contact-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            console.log(
+              `Username: ${username}, Password: ${password}, Message: ${message}`
+            );
+          }}
+        >
           <div className="form-group">
             <label htmlFor="username">Username</label>
             <input
-              type="text" 
+              type="text"
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -21,7 +26,7 @@ export const ContactForm = () => {
             <label htmlFor="password">Password</label>
             <input
               type="password"
-              name="password" 
+              name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

@@ -1,11 +1,10 @@
-import { LoginForm } from "./components/hooks/useState/LoginForm";
-
+import { ContactForm } from "./components/hooks/useState/ContactForm";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <LoginForm />
+        <ContactForm />
       </section>
     </>
   );
