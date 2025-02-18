@@ -25,6 +25,9 @@ export const LoginForm = () => {
       <h1 className="log-in">Login Form</h1>
       <form className="registration-form" onSubmit={handleOnSubmit}>
         <div className="form-group">
+          <p>
+            {username} {password}
+          </p>
           <label htmlFor="username">Username</label>
           <input
             type="text"

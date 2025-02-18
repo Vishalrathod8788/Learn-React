@@ -45,6 +45,7 @@ export const Registerd = () => {
         {firstName} {lastName} {email} {phone} {password}
       </p>
       <form onSubmit={handleSubmit}>
+      
         <div className="form-group">
           <label>First Name:</label>
           <input
