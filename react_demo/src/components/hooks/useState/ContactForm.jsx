@@ -1,3 +1,4 @@
+import "./CSS/ContactForm.css";
 export const ContactForm = () => {
   return (
     <>
@@ -8,7 +9,7 @@ export const ContactForm = () => {
           onSubmit={(e) => {
             e.preventDefault();
             console.log(
-              `Username: ${username}, Password: ${password}, Message: ${message}`
+              `Username: ${username}, Email: ${email}, Message: ${message}`
             );
           }}
         >
@@ -23,11 +24,11 @@ export const ContactForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="email">Password</label>
             <input
-              type="password"
-              name="password"
-              value={password}
+              type="email"
+              name="email"
+              value={email}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
@@ -45,59 +46,7 @@ export const ContactForm = () => {
         </form>
 
         <style>{`
-          .contact-title {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-          }
-
-          .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          }
-
-          .form-group {
-            margin-bottom: 15px;
-          }
-
-          .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-          }
-
-          .form-group input,
-          .form-group textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-          }
-
-          .form-group textarea {
-            height: 100px;
-            resize: vertical;
-          }
-
-          button {
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 16px;
-          }
-
-          button:hover {
-            background: #0056b3;
-          }
+          
         `}</style>
       </div>
     </>
