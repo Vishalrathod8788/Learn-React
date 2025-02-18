@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./useState.css";
+import "./CSS/useState.css";
 
 export const Counter = () => {
   const [count, setCount] = useState(0);
@@ -31,6 +31,9 @@ export const Counter = () => {
           setStep(Number(e.target.value));
         }}
       />
+      <style>{`
+        
+      `}</style>
       <div className="button-group">
         <button onClick={handleIncrement} disabled={count >= 100}>
           Increment

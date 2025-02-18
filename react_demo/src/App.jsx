@@ -1,10 +1,10 @@
-import { ContactForm } from "./components/hooks/useState/ContactForm";
+import { Counter } from "./components/hooks/useState";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <ContactForm />
+        <Counter />
       </section>
     </>
   );
