@@ -1,11 +1,11 @@
-import "./components/hooks/useEffect/CSS/index.css";
-import { UseEffectDemo } from "./components/hooks/useEffect/UseEffectDemo";
+
+import { UseEffectChallenge } from "./components/hooks/useEffect/UseEffectChallenge";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <UseEffectDemo />
+        <UseEffectChallenge />
       </section>
     </>
   );
