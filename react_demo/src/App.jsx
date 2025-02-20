@@ -1,11 +1,10 @@
-
-import { UseEffectChallenge } from "./components/hooks/useEffect/UseEffectChallenge";
+import { HowNotFetchAPI } from "./components/hooks/useEffect/HowNotFetchAPI";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <UseEffectChallenge />
+        <HowNotFetchAPI />
       </section>
     </>
   );
