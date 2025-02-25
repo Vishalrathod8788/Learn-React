@@ -1,10 +1,10 @@
-import { UseRefs } from "./components/hooks/useRefs";
+import { ForwordRef } from "./components/hooks/useRefs/ForwordRef";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <UseRefs />
+        <ForwordRef />
       </section>
     </>
   );
