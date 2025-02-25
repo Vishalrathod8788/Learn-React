@@ -1,10 +1,10 @@
-import { HowNotFetchAPI } from "./components/hooks/useEffect/HowNotFetchAPI";
+import { UseRefs } from "./components/hooks/useRefs";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <HowNotFetchAPI />
+        <UseRefs />
       </section>
     </>
   );
