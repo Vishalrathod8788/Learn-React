@@ -2,7 +2,7 @@ export const UseID = () => {
   return (
     <form>
       <div>
-        <label htmlFor="username">ID</label>
+        <label htmlFor="username">Username</label>
         <input type="text" id="username" name="username" />
       </div>
       <div>
