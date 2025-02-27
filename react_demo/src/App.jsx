@@ -1,10 +1,10 @@
-import { UseID } from "./hooks/UseID";
+import { ParentComponent } from "./PropsDrilling";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <UseID />
+        <ParentComponent />
       </section>
     </>
   );
