@@ -1,13 +1,18 @@
+import { useId } from "react";
+
 export const UseID = () => {
+  const usernameId = useId();
+  const emailId = useId();
+
   return (
     <form>
       <div>
-        <label htmlFor="username">Username</label>
-        <input type="text" id="username" name="username" />
+        <label htmlFor={usernameId}>Username</label>
+        <input type="text" id={usernameId} name="username" />
       </div>
       <div>
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" />
+        <label htmlFor={emailId}>Email</label>
+        <input type="email" id={emailId} name="email" />
       </div>
       <button type="submit">Submit</button>
     </form>
