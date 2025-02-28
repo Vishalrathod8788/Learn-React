@@ -1,11 +1,9 @@
-import { ParentComponent } from "./PropsDrilling";
+import { BioProvider } from "./hooks/ContextAPI";
 
 export const App = () => {
   return (
-    <>
-      <section className="container">
-        <ParentComponent />
-      </section>
-    </>
+    <BioProvider>
+      <Home />
+    </BioProvider>
   );
 };
