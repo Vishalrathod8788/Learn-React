@@ -16,12 +16,6 @@ export const Home = () => {
         My Education is {myEducation.degree} in {myEducation.branch} since{" "}
         {myEducation.year}
       </p>
-      <h1>
-        Hello, this is ContextAPI Demo, My name is {myName}, I'm {myAge} old, my
-        Hobbies is {`${myHobbies[0]}, ${myHobbies[1]} and ${myHobbies[2]}`} and
-        my Education{" "}
-        {`${myEducation.degree} in ${myEducation.branch} since ${myEducation.year}`}{" "}
-      </h1>
     </>
   );
 };
