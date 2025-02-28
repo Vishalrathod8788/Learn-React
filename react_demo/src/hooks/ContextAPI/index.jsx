@@ -4,8 +4,14 @@ import { createContext } from "react";
 export const BioContext = createContext();
 
 // 2 Step: Create a Provider
-export const BioProvider = () => {
-    const myName = "Vishal";
+export const BioProvider = ({ children }) => {
+  const myName = "Vishal";
+  const myAge = 21;
+  const myAddress = "Jamnagar";
 
-    return<BioContext value={myName}></BioContext>
+  return (
+    <BioContext.Provider value={{ myName, myAge, myAddress }}>
+      {children}
+    </BioContext.Provider>
+  );
 };

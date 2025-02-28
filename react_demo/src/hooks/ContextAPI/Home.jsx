@@ -1,10 +1,12 @@
-import { BioProvider } from ".";
+import { useContext } from "react";
+import { BioContext } from ".";
 
 export const Home = () => {
+  const { myName, myAge, myAddress } = useContext(BioContext);
   return (
-    <BioProvider data={myName}>
-      <h1>Home Component</h1>
-      <p>My Name is {myName}</p>
-    </BioProvider>
+    <h1>
+      Hello, Context API My Name is {myName}, I'm {myAge} years old, I'm from{" "}
+      {myAddress}.
+    </h1>
   );
 };
