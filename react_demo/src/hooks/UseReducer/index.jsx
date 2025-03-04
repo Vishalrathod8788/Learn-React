@@ -23,6 +23,7 @@ export const UseReducer = () => {
       return;
     }
   };
+
   return (
     <>
       <div className=" p-4 h-lvh flex flex-col justify-center items-center">
