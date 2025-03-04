@@ -1,19 +1,25 @@
 import { useReducer } from "react";
 
 export const UseReducer = () => {
+  
+  const initialState = {
+    count: 0,
+  };
+
   const reducre = (state, action) => {
-    if (action.type === "INCREMENT") {
-      console.log(state);
-      if (state === 20) return 20;
-      return state + 1;
-    } else if (action.type === "DECREMENT") {
-      if (state === 0) return 0;
-      return state - 1;
-    } else if (action.type === "RESET") {
-      return 0;
+    switch (action.type) {
+      case "INCREMENT":
+        return { count: state.count + 1 };
+      case "DECREMENT":
+        return { count: state.count - 1 };
+      case "RESET":
+        return { count: 0 };
+      default:
+        return state;
     }
   };
-  const [count, dispatch] = useReducer(reducre, 0);
+
+  const [count, dispatch] = useReducer(reducre, initialState);
 
   const handleIncre = () => {
     dispatch({ type: "INCREMENT" });
@@ -29,7 +35,7 @@ export const UseReducer = () => {
   return (
     <>
       <div className="p-4 h-lvh flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-bold">{count}</h1>
+        <h1 className="text-3xl font-bold">{state.count}</h1>
         <button
           className=" bg-slate-400 p-2 rounded-md m-2 "
           onClick={handleIncre}
