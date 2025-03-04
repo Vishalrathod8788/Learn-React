@@ -2,9 +2,11 @@ import { useReducer } from "react";
 
 export const UseReducer = () => {
   const reducre = (state, action) => {
-    if (action.INCREMENT) {
+    if (action.type === "INCREMENT") {
+      if (state === 20) return 20;
       return state + 1;
-    } else if (action.DECREMENT) {
+    } else if (action.type === "DECREMENT") {
+        if (state === 0) return 0;
       return state - 1;
     }
   };
@@ -12,9 +14,6 @@ export const UseReducer = () => {
 
   const handleIncre = () => {
     dispatch({ type: "INCREMENT" });
-    if (count === 20) {
-      return;
-    }
   };
 
   const handleDecre = () => {
@@ -26,8 +25,8 @@ export const UseReducer = () => {
 
   return (
     <>
-      <div className=" p-4 h-lvh flex flex-col justify-center items-center">
-        <h1 className=" text-3xl font-bold">{count}</h1>
+      <div className="p-4 h-lvh flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-bold">{count}</h1>
         <button
           className=" bg-slate-400 p-2 rounded-md m-2 "
           onClick={handleIncre}
