@@ -1,5 +1,5 @@
-import { MemoCount } from "./hooks/Memo/MemoCount";
+import { ReactMemo } from "./hooks/Memo/ReactMemo";
 
 export const App = () => {
-  return <MemoCount />;
+  return <ReactMemo />;
 };
