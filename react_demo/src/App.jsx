@@ -1,5 +1,5 @@
-import { UseReducer } from "./hooks/UseReducer";
+import { MemoCount } from "./hooks/Memo/MemoCount";
 
 export const App = () => {
-  return <UseReducer />;
+  return <MemoCount />;
 };
