@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-const Counts = () => {
+import React, { memo, useRef } from "react";
+export const Counts = memo(() => {
   const renderCount = useRef(0);
   return (
     <>
@@ -9,6 +9,4 @@ const Counts = () => {
       </div>
     </>
   );
-};
-
-export default React.memo(Counts);
+});
