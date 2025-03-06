@@ -1,5 +1,5 @@
-import { UseMemo } from "./hooks/Memo/UseMemo";
+import { UseCallback } from "./hooks/Memo/UseCallback";
 
 export const App = () => {
-  return <UseMemo />;
+  return <UseCallback />;
 };
