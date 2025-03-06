@@ -1,5 +1,5 @@
-import { ReactMemo } from "./hooks/Memo/ReactMemo";
+import { UseMemo } from "./hooks/Memo/UseMemo";
 
 export const App = () => {
-  return <ReactMemo />;
+  return <UseMemo />;
 };
